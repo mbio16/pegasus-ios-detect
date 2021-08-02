@@ -15,6 +15,13 @@ export PATH=$PATH:~/.local/bin
 cd baseHomeDir
 python3 -m venv env
 source env/bin/activate
+
+
+git clone https://github.com/mvt-project/mvt.git
+cd mvt
+pip3 install .
+
+
 mkdir backup
 mkdir decripted
 mkdir output
