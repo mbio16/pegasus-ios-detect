@@ -1,10 +1,10 @@
 # pegasus-ios-detect
 Commands to detect pegasus malware
-## before detecting
+##before detecting
  - iPhone backup into Mac
  - password for iPhone backup
 
-## Shell commands
+## Shell commands
 
 ```console
 brew install python3 libusb sqlite3
