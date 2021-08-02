@@ -21,8 +21,11 @@ mkdir output
 
 
 curl https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-07-18_nso/pegasus.stix2 > pegasus.stix2
-mvt-ios decrypt-backup -p password -d decrypted/ <backup>
-mvt-ios check-backup -o /output -i /pegasus.stix2 /backup
+mvt-ios decrypt-backup -p password -d <decrypted> <backup>
+mvt-ios check-backup -o <output> -i pegasus.stix2 <backup>
+
+#check files in <output> 
+# if see _detected suffix -> iPhone has malware
 
 rm -rm backup decrypted 
 ```
